@@ -33,6 +33,11 @@
     }
   },
   "entity": {
+    "binary_sensor": {
+      "moving": {
+        "name": "Moving"
+      }
+    },
     "device_tracker": {
       "vehicle": {
         "name": "Vehicle"

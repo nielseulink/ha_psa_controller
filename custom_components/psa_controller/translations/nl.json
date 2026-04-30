@@ -33,6 +33,11 @@
     }
   },
   "entity": {
+    "binary_sensor": {
+      "moving": {
+        "name": "In beweging"
+      }
+    },
     "device_tracker": {
       "vehicle": {
         "name": "Voertuig"

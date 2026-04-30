@@ -10,16 +10,18 @@ Connect Home Assistant to **[psa_car_controller](https://github.com/flobz/psa_ca
 
 ## Table of contents
 
-- [Features](#features)
-- [Screenshots in Home Assistant](#screenshots-in-home-assistant)
-- [Installation](#installation)
-  - [HACS (recommended)](#hacs-recommended)
-  - [Manual](#manual)
-- [Initial setup](#initial-setup)
-- [Entities overview](#entities-overview)
-- [Vehicle image cache](#vehicle-image-cache)
-- [Requirements](#requirements)
-- [Links](#links)
+- [🚗 PSA Car controller for Home Assistant](#-psa-car-controller-for-home-assistant)
+  - [Table of contents](#table-of-contents)
+  - [✨ Features](#-features)
+  - [🖼️ Screenshots in Home Assistant](#️-screenshots-in-home-assistant)
+  - [📦 Installation](#-installation)
+    - [HACS (recommended)](#hacs-recommended)
+    - [Manual](#manual)
+  - [🔧 Initial setup](#-initial-setup)
+  - [📊 Entities overview](#-entities-overview)
+  - [🖼️ Vehicle image cache](#️-vehicle-image-cache)
+  - [✅ Requirements](#-requirements)
+  - [🔗 Links](#-links)
 
 ---
 
@@ -87,7 +89,7 @@ This integration is **not** in the default HACS store. Add it as a **custom repo
 
 **Sensors (examples):** battery level, range, total range, mileage, charging status / mode / rate, charge threshold, next stop time, fuel level & range, outside temperature, 12V battery, ignition, preconditioning, etc.
 
-**Binary sensors:** plugged in, position / moving, engine running.
+**Binary sensors:** plugged in, moving, engine running.
 
 **Other:** `device_tracker` (vehicle), **number** (charge threshold target), **buttons** (wake, climate on/off).
 

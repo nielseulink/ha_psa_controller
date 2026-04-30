@@ -44,7 +44,7 @@ BINARY_SENSORS: tuple[PsaBinarySensorEntityDescription, ...] = (
     ),
     PsaBinarySensorEntityDescription(
         key="position",
-        name="Position",
+        translation_key="moving",
         device_class=BinarySensorDeviceClass.MOVING,
         value_fn=lambda data: vehicle_value(data, "kinetic", "moving"),
     ),
@@ -92,20 +92,3 @@ class PsaBinarySensor(PsaControllerEntity, BinarySensorEntity):
         if value is None:
             return None
         return bool(value)
-
-    @property
-    def extra_state_attributes(self) -> dict[str, Any] | None:
-        """Return additional attributes for the position sensor."""
-        if self.entity_description.key != "position":
-            return None
-
-        coordinates = vehicle_value(
-            self.coordinator.data, "last_position", "geometry", "coordinates"
-        )
-        if not isinstance(coordinates, list) or len(coordinates) < 2:
-            return None
-
-        return {
-            "latitude": coordinates[1],
-            "longitude": coordinates[0],
-        }
