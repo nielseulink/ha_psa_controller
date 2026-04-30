@@ -1,0 +1,42 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "PSA Car controller",
+        "description": "Vul je psa_car_controller-server, voertuigidentiteit en weergavenaam in.",
+        "data": {
+          "host": "PSA Controller host",
+          "vin": "VIN",
+          "brand": "Merk",
+          "model": "Model",
+          "vehicle_image_url": "Voertuigafbeelding URL (optioneel)"
+        },
+        "data_description": {
+          "host": "Voorbeeld: http://192.168.0.100:5000 (schema, IP of hostnaam, en poort van psa_car_controller)",
+          "vin": "Voertuigidentificatienummer: vind je in psa_car_controller logs of configuratie (bijv. cars.json), of in de fabrikant-app / voertuigdocumenten",
+          "brand": "Fabrikantnaam in Home Assistant, bijvoorbeeld Peugeot of Citroën",
+          "model": "Modelnaam in Home Assistant, bijvoorbeeld e-208",
+          "vehicle_image_url": "Openbare HTTPS-URL (bijv. Peugeot V3DImage); wordt als gecentreerde 400×400 PNG met transparante rand onder www/ opgeslagen"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Kan geen verbinding maken met PSA Controller. Controleer de host en het VIN.",
+      "invalid_host": "Vul een geldige host in, bijvoorbeeld http://192.168.0.100:5000.",
+      "invalid_vin": "Vul een VIN in.",
+      "invalid_brand": "Vul een merk in.",
+      "invalid_model": "Vul een model in.",
+      "invalid_image_url": "Vul een geldige http(s)-URL voor de afbeelding in, of laat leeg."
+    },
+    "abort": {
+      "already_configured": "Deze auto is al geconfigureerd."
+    }
+  },
+  "entity": {
+    "device_tracker": {
+      "vehicle": {
+        "name": "Voertuig"
+      }
+    }
+  }
+}

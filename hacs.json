@@ -1,0 +1,12 @@
+{
+  "name": "ha_psa_car_controller",
+  "render_readme": true,
+  "domains": [
+    "binary_sensor",
+    "button",
+    "device_tracker",
+    "number",
+    "sensor"
+  ],
+  "homeassistant": "2026.3.0"
+}

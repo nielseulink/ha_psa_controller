@@ -1,0 +1,42 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "PSA Car controller",
+        "description": "Enter your psa_car_controller server, vehicle identity, and display name fields.",
+        "data": {
+          "host": "PSA Controller host",
+          "vin": "VIN",
+          "brand": "Brand",
+          "model": "Model",
+          "vehicle_image_url": "Vehicle image URL (optional)"
+        },
+        "data_description": {
+          "host": "Example: http://192.168.0.100:5000 (scheme, IP or hostname, and port of psa_car_controller)",
+          "vin": "Vehicle identification number: check psa_car_controller logs or config (e.g. cars.json), or your manufacturer app / vehicle documents",
+          "brand": "Manufacturer name shown in Home Assistant, for example Peugeot or Citroën",
+          "model": "Model name shown in Home Assistant, for example e-208",
+          "vehicle_image_url": "Public HTTPS image URL (e.g. Peugeot V3DImage); saved as a centered 400×400 PNG with transparent padding under www/"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not connect to PSA Controller. Check the host and VIN.",
+      "invalid_host": "Enter a valid host, for example http://192.168.0.100:5000.",
+      "invalid_vin": "Enter a VIN.",
+      "invalid_brand": "Enter a brand.",
+      "invalid_model": "Enter a model.",
+      "invalid_image_url": "Enter a valid http(s) image URL or leave empty."
+    },
+    "abort": {
+      "already_configured": "This vehicle is already configured."
+    }
+  },
+  "entity": {
+    "device_tracker": {
+      "vehicle": {
+        "name": "Vehicle"
+      }
+    }
+  }
+}
