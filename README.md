@@ -4,7 +4,7 @@
 [![HA](https://img.shields.io/badge/Home%20Assistant-2026.3+-41BDF5?style=flat-square)](https://www.home-assistant.io/)
 [![GitHub release](https://img.shields.io/github/v/release/nielseulink/ha_psa_controller?label=release&style=flat-square)](https://github.com/nielseulink/ha_psa_controller/releases)
 
-Connect Home Assistant to **[psa_car_controller](https://github.com/flobz/psa_car_controller)** (Flobz PSA Connected Car API proxy). Poll vehicle status, control charging thresholds, preconditioning, wake-up, and show position on the map with an optional vehicle image.
+Connect Home Assistant to **[psa_car_controller](https://github.com/flobz/psa_car_controller)** (thanks to [@flobz](https://github.com/flobz)). Poll vehicle status, control charging thresholds, preconditioning, wake-up, and show position on the map with an optional vehicle image.
 
 ---
 
@@ -36,19 +36,19 @@ Connect Home Assistant to **[psa_car_controller](https://github.com/flobz/psa_ca
 
 ## 🖼️ Screenshots in Home Assistant
 
-Voorbeelden van Lovelace-**Entities**-kaarten (donker thema; labels kunnen Engels of Nederlands zijn afhankelijk van je HA-taal).
+Lovelace **Entities** cards (dark theme; entity names follow your Home Assistant language).
 
-**Sensoren** — batterij, bereik, laden, brandstof, km-stand, enz.:
+**Sensors** — battery, range, charging, fuel, mileage, and related values:
 
-![Sensoren — PSA Car controller](images/screenshot-sensors.png)
+![Sensors — PSA Car controller](images/screenshot-sensors.png)
 
-**Bediening** — laaddrempel, klimaat aan/uit, wake-up:
+**Controls** — charge threshold, climate on/off, wake-up:
 
-![Bediening — laaddrempel en acties](images/screenshot-controls.png)
+![Controls — charge threshold and actions](images/screenshot-controls.png)
 
-**Diagnose** — voertuig met verwerkte afbeelding (optioneel):
+**Diagnostics** — vehicle row with optional processed image:
 
-![Diagnose — voertuig](images/screenshot-diagnostics.png)
+![Diagnostics — vehicle](images/screenshot-diagnostics.png)
 
 ---
 
