@@ -1,5 +1,5 @@
 {
-  "name": "ha_psa_car_controller",
+  "name": "PSA Car controller",
   "render_readme": true,
   "domains": [
     "binary_sensor",
