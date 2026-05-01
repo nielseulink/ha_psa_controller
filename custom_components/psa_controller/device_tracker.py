@@ -30,6 +30,7 @@ async def async_setup_entry(
 class PsaVehicleTracker(PsaControllerEntity, TrackerEntity):
     """GPS device tracker with optional cached vehicle image."""
 
+    _attr_entity_category = None
     _attr_translation_key = "vehicle"
 
     def __init__(self, coordinator: PsaControllerDataUpdateCoordinator) -> None:

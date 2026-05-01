@@ -38,17 +38,13 @@ Connect Home Assistant to **[psa_car_controller](https://github.com/flobz/psa_ca
 
 Lovelace **Entities** cards (dark theme; entity names follow your Home Assistant language).
 
-**Sensors** — battery, range, charging, fuel, mileage, and related values:
+**Sensors** — battery, range, charging, fuel, mileage, vehicle location (`device_tracker`), binary sensors, and related values:
 
 ![Sensors — PSA Car controller](images/screenshot-sensors.png)
 
 **Controls** — charge threshold, climate on/off, wake-up:
 
 ![Controls — charge threshold and actions](images/screenshot-controls.png)
-
-**Diagnostics** — vehicle row with optional processed image:
-
-![Diagnostics — vehicle](images/screenshot-diagnostics.png)
 
 ---
 
