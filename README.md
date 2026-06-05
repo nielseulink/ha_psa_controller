@@ -10,16 +10,16 @@ Connect Home Assistant to **[psa_car_controller](https://github.com/flobz/psa_ca
 
 ## Table of contents
 
-- [Features](#features)
-- [Screenshots in Home Assistant](#screenshots-in-home-assistant)
-- [Installation](#installation)
+- [Features](#-features)
+- [Screenshots in Home Assistant](#-screenshots-in-home-assistant)
+- [Installation](#-installation)
   - [HACS (recommended)](#hacs-recommended)
   - [Manual](#manual)
-- [Initial setup](#initial-setup)
-- [Entities overview](#entities-overview)
-- [Vehicle image cache](#vehicle-image-cache)
-- [Requirements](#requirements)
-- [Links](#links)
+- [Initial setup](#-initial-setup)
+- [Entities overview](#-entities-overview)
+- [Vehicle image cache](#-vehicle-image-cache)
+- [Requirements](#-requirements)
+- [Links](#-links)
 
 ---
 
