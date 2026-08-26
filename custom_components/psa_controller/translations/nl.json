@@ -33,6 +33,11 @@
     }
   },
   "entity": {
+    "sensor": {
+      "last_sync": {
+        "name": "Laatste PSA-synchronisatie"
+      }
+    },
     "binary_sensor": {
       "moving": {
         "name": "In beweging"

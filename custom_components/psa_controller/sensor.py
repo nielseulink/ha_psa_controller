@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from collections.abc import Callable
 from dataclasses import dataclass
+from datetime import UTC, datetime
 from typing import Any
 
 from homeassistant.components.sensor import (
@@ -38,7 +39,30 @@ def _total_range(data: dict[str, Any]) -> int | None:
     return int(electric or 0) + int(fuel or 0)
 
 
+def _last_sync(data: dict[str, Any]) -> datetime | None:
+    """Return the last successful vehicle update as a timezone-aware datetime."""
+    value = vehicle_value(data, "energy", 0, "updated_at")
+    if isinstance(value, datetime):
+        parsed = value
+    elif isinstance(value, str):
+        try:
+            parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        except ValueError:
+            return None
+    else:
+        return None
+
+    return parsed if parsed.tzinfo is not None else parsed.replace(tzinfo=UTC)
+
+
 SENSORS: tuple[PsaSensorEntityDescription, ...] = (
+    PsaSensorEntityDescription(
+        key="last_sync",
+        translation_key="last_sync",
+        device_class=SensorDeviceClass.TIMESTAMP,
+        icon="mdi:sync",
+        value_fn=_last_sync,
+    ),
     PsaSensorEntityDescription(
         key="charging_status",
         name="Charging Status",

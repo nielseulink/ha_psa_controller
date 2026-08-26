@@ -81,7 +81,7 @@ This integration is **not** in the default HACS store. Add it as a **custom repo
 
 ## 📊 Entities overview
 
-**Sensors (examples):** battery level, range, total range, mileage, charging status / mode / rate, charge threshold, next stop time, fuel level & range, outside temperature, 12V battery, ignition, preconditioning, etc.
+**Sensors (examples):** last PSA sync, battery level, range, total range, mileage, charging status / mode / rate, charge threshold, next stop time, fuel level & range, outside temperature, 12V battery, ignition, preconditioning, etc.
 
 **Binary sensors:** plugged in, moving, engine running.
 

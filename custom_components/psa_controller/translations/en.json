@@ -33,6 +33,11 @@
     }
   },
   "entity": {
+    "sensor": {
+      "last_sync": {
+        "name": "Last PSA sync"
+      }
+    },
     "binary_sensor": {
       "moving": {
         "name": "Moving"
